@@ -51,19 +51,22 @@ class _HotelImageScrollCardState extends State<HotelImageScrollCard> {
                 padding: const EdgeInsets.all(8.0),
                 child: Container(
                   decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
+                      borderRadius: BorderRadius.circular(5),
                       color: Colors.white),
                   child: Padding(
-                    padding: EdgeInsets.only(top: 5.0, bottom: 5.0),
-                    child: SmoothPageIndicator(
-                      controller: _controller,
-                      count: images.length,
-                      effect: SwapEffect(
-                        activeDotColor: Colors.black,
-                        radius: 10,
-                        dotHeight: 10,
-                        dotWidth: 10,
-                        dotColor: Color.fromARGB(255, 206, 205, 205),
+                    padding: EdgeInsets.only(
+                        top: 5.0, bottom: 5.0, left: 10, right: 10),
+                    child: Container(
+                      child: SmoothPageIndicator(
+                        controller: _controller,
+                        count: images.length,
+                        effect: SwapEffect(
+                          activeDotColor: Colors.black,
+                          radius: 10,
+                          dotHeight: 10,
+                          dotWidth: 10,
+                          dotColor: Color.fromARGB(255, 206, 205, 205),
+                        ),
                       ),
                     ),
                   ),
