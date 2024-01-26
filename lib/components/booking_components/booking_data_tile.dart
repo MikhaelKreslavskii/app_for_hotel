@@ -9,7 +9,7 @@ class BookingDataTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 16.0, top: 8, bottom: 8),
+      padding: const EdgeInsets.only(left: 16.0, top: 8, bottom: 8, right: 8),
       child: Container(
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,

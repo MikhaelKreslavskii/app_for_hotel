@@ -7,8 +7,9 @@ class HotelParametrsList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 197,
+      color: Color.fromARGB(255, 251, 251, 252),
       child: ListView(
-        physics: const NeverScrollableScrollPhysics(),
+        // physics: const NeverScrollableScrollPhysics(),
         padding: EdgeInsets.zero,
         shrinkWrap: true,
         children: [
@@ -32,6 +33,7 @@ class HotelParametrsList extends StatelessWidget {
             ),
             trailing: Icon(Icons.arrow_forward_ios_sharp),
           ),
+          Divider(),
           ListTile(
             leading: Image.asset("lib/assets/icons/tick.png"),
             title: Text(
@@ -49,6 +51,7 @@ class HotelParametrsList extends StatelessWidget {
             ),
             trailing: Icon(Icons.arrow_forward_ios_sharp),
           ),
+          Divider(),
           ListTile(
             leading: Image.asset("lib/assets/icons/close_square.png"),
             title: Text(

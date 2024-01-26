@@ -26,6 +26,7 @@ class _RoomPageState extends State<RoomPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: const Color.fromARGB(255, 243, 243, 243),
         appBar: AppBar(
           iconTheme: IconThemeData(
             color: Colors.black, //change your color here
@@ -48,7 +49,7 @@ class _RoomPageState extends State<RoomPage> {
                 fontFamily: 'SF',
                 fontWeight: FontWeight.w500),
           ),
-          backgroundColor: Colors.transparent,
+          backgroundColor: Colors.white,
           elevation: 0,
         ),
         body: BlocBuilder<RoomBloc, RoomState>(

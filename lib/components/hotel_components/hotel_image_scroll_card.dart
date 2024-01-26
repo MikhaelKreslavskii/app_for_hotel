@@ -62,9 +62,9 @@ class _HotelImageScrollCardState extends State<HotelImageScrollCard> {
                         count: images.length,
                         effect: SwapEffect(
                           activeDotColor: Colors.black,
-                          radius: 10,
-                          dotHeight: 10,
-                          dotWidth: 10,
+                          radius: 7,
+                          dotHeight: 7,
+                          dotWidth: 7,
                           dotColor: Color.fromARGB(255, 206, 205, 205),
                         ),
                       ),

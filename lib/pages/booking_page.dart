@@ -37,6 +37,7 @@ class _BookingPageState extends State<BookingPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: const Color.fromARGB(255, 243, 243, 243),
         appBar: AppBar(
           iconTheme: IconThemeData(
             color: Colors.black, //change your color here
@@ -59,7 +60,7 @@ class _BookingPageState extends State<BookingPage> {
                 fontFamily: 'SF',
                 fontWeight: FontWeight.w500),
           ),
-          backgroundColor: Colors.transparent,
+          backgroundColor: Colors.white,
           elevation: 0,
         ),
         body: BlocBuilder<BookingBloc, BookingState>(
@@ -70,6 +71,9 @@ class _BookingPageState extends State<BookingPage> {
                 child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
+                      SizedBox(
+                        height: 8,
+                      ),
                       BookingHotelWidget(
                         hotel: state.booking,
                       ),
